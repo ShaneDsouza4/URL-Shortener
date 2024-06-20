@@ -1,8 +1,8 @@
 const mongoose = require("mongoose");
-
+mongoose.set('strictQuery', true);
 //Schema
 const urlSchema = new mongoose.Schema({
-    shortId:{
+    shortID:{
         type: String,
         required: true,
         unique: true
